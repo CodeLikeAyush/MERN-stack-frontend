@@ -34,8 +34,8 @@ function Contact() {
         };
 
         try {
-            const fetchResponse = await fetch("http://localhost:4000/registration", options);
-            // const fetchResponse = await fetch(process.env.API_URL/registration, options);
+            // const fetchResponse = await fetch(`http://localhost:4000/registration`, options);
+            const fetchResponse = await fetch(`${process.env.API_URL}/registration`, options);
 
             const data = await fetchResponse.json();
             // return data;
